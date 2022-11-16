@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { GlobalStyle } from "./styles/GlobalStyles";
+import { Helmet } from "react-helmet";
+import Routes from "./routes";
+import React, { useState } from "react";
+import { ThemeProvider } from "styled-components";
+import { darkTheme, lightTheme } from "./styles/theme";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.min.css";
+
+export const ThemeContext = React.createContext(null);
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const [theme, setTheme] = useState("light");
+	const themeStyle = theme === "light" ? lightTheme : darkTheme;
+	return (
+		<ThemeContext.Provider value={{ setTheme, theme }}>
+			<ThemeProvider theme={themeStyle}>
+				<GlobalStyle />
+				<Routes></Routes>
+				<ToastContainer></ToastContainer>
+			</ThemeProvider>
+		</ThemeContext.Provider>
+	);
 }
-
 export default App;
