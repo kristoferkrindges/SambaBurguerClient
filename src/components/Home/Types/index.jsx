@@ -5,7 +5,7 @@ export default function Type() {
 	return (
 
         <Campanies>
-
+                
         </Campanies>
 		
 	);
