@@ -29,8 +29,8 @@ export default function Navbar({ toggle, resp }) {
 					</MobileIcon>
 					<NavMenu>
 						<NavLink to="/about">Lanches</NavLink>
+						<NavLink to="/about">Sobre</NavLink>
 						<NavLink to="/about">Franquias</NavLink>
-						<NavLink to="/about">Funcionários</NavLink>
 					</NavMenu>
 					<NavBtn>
 						<NavBtnLink to="/login">{resp}</NavBtnLink>
