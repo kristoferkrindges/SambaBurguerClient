@@ -46,32 +46,29 @@ export default function Footer() {
 					<FooterLinksWrapper>
 						<FooterLinkItems>
 							<FooterLinkTitle>Projeto</FooterLinkTitle>
-							<FooterLink to="/">Precin</FooterLink>
+							<FooterLink to="/">SambaBurguer</FooterLink>
 							<FooterLink to="/">SenacRS</FooterLink>
-							<FooterLink to="/">TCC</FooterLink>
-							{/* <FooterLink to="/">Hello World</FooterLink>
-							<FooterLink to="/">Hello World</FooterLink> */}
+							<FooterLink to="/">Frameworks</FooterLink>
+							<FooterLink to="/">AspNetApi C#</FooterLink>
+							<FooterLink to="/">React</FooterLink>
 						</FooterLinkItems>
 						<FooterLinkItems>
 							<FooterLinkTitle>Funções</FooterLinkTitle>
-							<FooterLink to="/">Publicar</FooterLink>
-							<FooterLink to="/">Sua Lista</FooterLink>
-							<FooterLink to="/">Suas Publicações</FooterLink>
-							<FooterLink to="/">Dashboard</FooterLink>
-							<FooterLink to="/">Feed</FooterLink>
+							<FooterLink to="/">Produtos</FooterLink>
+							<FooterLink to="/">Clientes</FooterLink>
+							<FooterLink to="/">Franquias</FooterLink>
+							<FooterLink to="/">Funcionários</FooterLink>
+							<FooterLink to="/">Vendas</FooterLink>
 						</FooterLinkItems>
 					</FooterLinksWrapper>
 				</FooterLinksContainer>
 				<SocialMedia>
 					<SocialMediaWrap>
-						<SocialLogo to="/">Precin</SocialLogo>
+						<SocialLogo to="/">SambaBurguer</SocialLogo>
 						<WebsiteRights>
 							Precin {new Date().getFullYear()}© Todos os direitos Reservados.
 						</WebsiteRights>
 						<SocialIcons>
-							{/* <SocialIconLink>
-								<InstagramIcon />
-							</SocialIconLink> */}
 							<SocialIconLink>
 								<IoCart />
 							</SocialIconLink>

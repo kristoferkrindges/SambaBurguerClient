@@ -32,7 +32,7 @@ export const InstagramIcon = styled(IoLogoInstagram)`
 
 export const Container = styled.footer`
 	background: ${({ theme }) => theme.background};
-	border-top: 1px solid black;
+	/* border-top: 1px solid black; */
 `;
 export const FooterWrap = styled.div`
 	padding: 48px 24px;

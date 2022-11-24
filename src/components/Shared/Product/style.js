@@ -1,9 +1,49 @@
 import styled from "styled-components";
+import {
+	IoPencilOutline,
+  IoTrashBinOutline,
+  IoColorWandSharp
+} from "react-icons/io5";
+
+export const IoTrash= styled(IoTrashBinOutline)`
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	stroke: white;
+
+	&:hover {
+		opacity: 0.5;
+	}
+`;
+
+export const IoColorWand= styled(IoColorWandSharp)`
+	width: 20px;
+	height: 20px;
+  margin-bottom: 20px;
+	cursor: pointer;
+	stroke: white;
+
+	&:hover {
+		opacity: 0.5;
+	}
+`;
+
+export const IoPencil = styled(IoPencilOutline)`
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	stroke: white;
+
+	&:hover {
+		opacity: 0.5;
+	}
+`;
 
 export const Card= styled.div`
 	border-radius: 25px;
     background-color: #FFF;
-    border: 1px solid black;
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
+    /* border: 1px solid black; */
     min-height: 40vh;
     width: 25vw;
 `;
@@ -16,6 +56,31 @@ display: flex;
 	position: relative;
     row-gap: 5px;
     padding: 25px 0;
+`;
+
+export const Icons = styled.div`
+	position: absolute;
+	top: 10px;
+	right: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	svg {
+		color: #fff;
+		opacity: 1;
+		margin-top: 10px;
+		transition: all 0.3s ease;
+		cursor: pointer;
+	}
+
+	svg:hover {
+		opacity: 0.6;
+	}
+
+	@media screen and (min-width: 320px) and (max-width: 1080px) {
+		right: 5px;
+	}
 `;
 
 export const Overlay = styled.span`
