@@ -10,6 +10,7 @@ import {
 	IoLockClosedOutline,
 	IoMailOutline,
 	IoFastFoodOutline,
+	IoBasketOutline,
 } from "react-icons/io5";
 
 export const IoPerson = styled(IoPersonOutline)`
@@ -78,6 +79,19 @@ export const IoFastFood = styled(IoFastFoodOutline)`
 		opacity: 0.5;
 	}
 `;
+
+export const IoBasket = styled(IoBasketOutline)`
+	width: 40px;
+	height: 40px;
+	stroke: ${({ theme }) => theme.text};
+
+	cursor: pointer;
+
+	&:hover {
+		opacity: 0.5;
+	}
+`;
+
 
 
 export const IoMail2 = styled(IoMailOutline)`
