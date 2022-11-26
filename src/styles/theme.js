@@ -6,7 +6,7 @@ export const lightTheme = {
 	text: "black",
 	primary: "rgb(52, 131, 235)",
 	navbar: "rgba(255, 255, 255, 1)",
-	background: "#fffff",
+	background: "whitesmoke",
 	title: "#fc4c35",
 	buttons: "#fc4c35",
 	buttons_hover: "rgba(37, 108, 225, 0.7)",

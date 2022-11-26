@@ -8,6 +8,7 @@ import {
 import HomeScreen from "./Pages/Home";
 import DashboardScreen from "./Pages/Dashboard";
 import ProductsScreen from "./Pages/Products"
+import ShopsScreen from "./Pages/Shops";
 import Login from "./Pages/Login";
 import ErrorPage from "./Pages/ErrorPage";
 import RegisterScreen from "./Pages/RegisterPage";
@@ -23,6 +24,9 @@ export default function Routess() {
 						<Route path="/products" element={<ProductsScreen />} />
 						<Route path="/products/register" element={<RegisterScreen type="products"/>}/>
 						<Route path="/products/update/:id" element={<UpdateScreen type="products"/>}/>
+						<Route path="/shops" element={<ShopsScreen />} />
+						<Route path="/shops/register" element={<RegisterScreen type="shops"/>}/>
+						<Route path="/shops/update/:id" element={<UpdateScreen type="shops"/>}/>
 						<Route path="*" element={<ErrorPage />} />
 					</Routes>
 				</Router>

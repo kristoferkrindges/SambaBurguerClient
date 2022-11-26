@@ -1,18 +1,20 @@
 import styled from "styled-components";
 import {
 	IoCameraOutline,
-	IoFastFoodOutline
+	IoFastFoodOutline,
+    IoBasketOutline
 } from "react-icons/io5";
 
-export const IconImage= styled(IoFastFoodOutline)`
+export const IconImageProduct= styled(IoFastFoodOutline)`
 	width: 31rem;
     height: 31rem;
-	cursor: pointer;
 	stroke: black;
+`;
 
-	&:hover {
-		opacity: 0.5;
-	}
+export const IconImageShop= styled(IoBasketOutline)`
+	width: 31rem;
+    height: 31rem;
+	stroke: black;
 `;
 
 export const Context = styled.div`
@@ -20,7 +22,7 @@ export const Context = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    //background-color: ${({ theme }) => theme.buttons};
+    background-color: #ffff;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
     padding: 1rem;
 
@@ -55,12 +57,17 @@ export const Image = styled.div`
     border-radius: 10%;
     padding: 1rem;
 
+    & img{
+        width: 100%;
+        border-radius: 10%;
+    }
+
     @media screen and (max-width: 1330px) {
 		display: none;
 	}
 `;
 
-export const ContentForm = styled.form`
+export const ContentForm = styled.div`
     width: 50%;
     display: flex;
     flex-direction: column;
