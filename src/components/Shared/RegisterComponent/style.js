@@ -21,7 +21,7 @@ export const Option = styled.main`
     height: 80vh;
     display: flex;
     /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212); */
-	width: 80%;
+	width: 90%;
 	padding: 24px 20px 20px 20px;
     align-items: center;
     justify-content: center;

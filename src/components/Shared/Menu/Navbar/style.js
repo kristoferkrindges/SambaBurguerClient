@@ -9,7 +9,8 @@ import {
 export const IoCart = styled(IoContrastOutline)`
 	width: 20px;
 	height: 20px;
-	margin-left: 50px;
+	margin-left: 40px;
+	margin-right: 20px;
 `;
 
 export const Nav = styled.nav`
@@ -76,7 +77,7 @@ export const MobileIcon = styled.div`
 		transform: translate(-100%, 60%);
 		font-size: 1.8rem;
 		cursor: pointer;
-		color: #94449e;
+		color: ${({ theme }) => theme.buttons}
 	}
 `;
 

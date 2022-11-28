@@ -10,7 +10,7 @@ export const IoCart = styled(IoContrastOutline)`
 `;
 
 export const Container= styled.header`
-	height: calc(80vh - 5rem);
+	height: calc(100vh - 5rem);
     position: relative;
     top: 5rem;
     display: grid;
@@ -101,7 +101,7 @@ export const Image= styled.div`
     right: -10rem;
     z-index: 1;
 
-    &img{
+    & img{
         width: 100%;
         object-fit: cover;
     }
@@ -112,8 +112,8 @@ export const Image= styled.div`
 `;
 
 export const RightBG= styled.div`
-	width: 70rem;
-    height: 70rem;
+	width: 68rem;
+    height: 68rem;
     border-radius: 50%;
     background: ${({ theme }) => theme.buttons};
     position: absolute;

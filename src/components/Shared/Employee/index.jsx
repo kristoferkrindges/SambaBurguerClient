@@ -18,6 +18,7 @@ import {
 	IoColorWand,
 	Icons,
 	IoBasket,
+	Email,
 } from "./style";
 import { Link } from "react-router-dom";
 import ModalDelete from "../ModalDelete";
@@ -51,7 +52,6 @@ export default function Employee({
         modal(true)
     }
 	return (
-        <li>
 			<Container>
 				<CardContent>
 					<Image>
@@ -69,24 +69,23 @@ export default function Employee({
 						<Subject>
 							<SubjectUl>
 								<Li>{gender}</Li>
-								{/* <Li>{gender}</Li> */}
 							</SubjectUl>
 						</Subject>
+						<Email>{email}</Email>
 					</NameSubject>
-					<Rating>
+					{/* <Rating>
 						{star.map((id, index) => (
 							<StarIcon1 key={index}></StarIcon1>
 						))}
 						{star2.map((id, index) => (
 							<StarIcon2 key={index}></StarIcon2>
 						))}
-					</Rating>
+					</Rating> */}
 					{/* eventClick */}
 					<Buttons onClick={"eventClick"}>
 						<HireMe>{func}</HireMe>
 					</Buttons>
 				</CardContent>
 			</Container>
-		</li>
 	);
 }

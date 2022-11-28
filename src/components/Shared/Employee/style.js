@@ -50,8 +50,10 @@ export const Container = styled.div`
 	border-radius: 20px;
 	position: relative;
 	margin: 20px 0;
-	height: 42vh;
-	width: 36vh;
+	min-height: 40vh;
+    width: 25vw;
+	/* height: 42vh;
+	width: 36vh; */
 	cursor: pointer;
 	transition: opacity 0.5s ease-out;
 	&::before {
@@ -113,9 +115,17 @@ export const Name = styled.span`
 	font-size: 2rem;
 	font-weight: 600;
 `;
+
+export const Email = styled.span`
+	font-size: 1.2rem;
+	font-weight: 500;
+	margin-top: 10px;
+`;
+
 export const Subject = styled.span`
 	font-size: 1.2rem;
 	font-weight: 500;
+	margin-top: 10px;
 `;
 export const SubjectUl = styled.ul``;
 export const Li = styled.li``;
