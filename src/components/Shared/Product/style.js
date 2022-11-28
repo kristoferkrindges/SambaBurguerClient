@@ -134,19 +134,24 @@ export const CardContent = styled.div`
 `;
 
 export const Name = styled.h2`
-	font-size: 18px;
-  font-weight: 500;
+	font-size: 25px;
+  font-weight: bold;
   color: #333;
+  margin-bottom: 10px;
 `;
 
 export const Description = styled.p`
 	font-size: 14px;
   color: #707070;
   text-align: center;
+  margin-bottom: 10px;
 `;
 
 export const Price = styled.h3`
-	
+	font-size: 30px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
 `;
 
 export const Button = styled.div`

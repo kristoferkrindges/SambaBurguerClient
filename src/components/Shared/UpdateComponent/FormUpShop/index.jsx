@@ -30,6 +30,8 @@ import {
     Input,
     Exit,
     IoBasket,
+    IoBasket2,
+    HireMe2,
 } from "../UpdateForm/style";
 import ShopsService from "../../../../services/shops";
 import { Navigate } from "react-router-dom";
@@ -127,7 +129,7 @@ function FormUpShop(props) {
                                 onClick={HandlerOpen}
                                 style={open ? { display: "none" } : {}}
                             >
-                                <HireMe>Editar</HireMe>
+                                <HireMe2>Editar</HireMe2>
                             </Buttons>
                         </CardContent>
                     </Top>
@@ -146,7 +148,7 @@ function FormUpShop(props) {
                                                 setShopCity(e.target.value);
                                             }}/>
                                         <TextInput>
-                                            <IoPerson></IoPerson>
+                                            <IoBasket2/>
                                         </TextInput>
                                     </ContainerInput>
                                 </Controller>
@@ -161,7 +163,7 @@ function FormUpShop(props) {
                                                 setShopState(e.target.value);
                                             }}/>
                                         <TextInput>
-                                            <IoLock></IoLock>
+                                            <IoBasket2/>
                                         </TextInput>
                                     </ContainerInput>
                                 </Controller>
@@ -178,7 +180,7 @@ function FormUpShop(props) {
                                                 setShopCep(e.target.value);
                                             }}/>
                                         <TextInput>
-                                            <IoMail></IoMail>
+                                            <IoBasket2/>
                                         </TextInput>
                                     </ContainerInput>
                                 </Controller>

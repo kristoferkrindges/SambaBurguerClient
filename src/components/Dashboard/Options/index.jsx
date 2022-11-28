@@ -57,12 +57,13 @@ const Options = (props) => {
 			</InfoData>
 			<Data>
 				<ContentData>
-					<Profile
+					{/* <Profile
 						name={props.name}
 						email={props.email}
 						img={props.img}
 						time={props.time}
-					></Profile>
+					></Profile> */}
+					<h1>Total counter</h1>
 				</ContentData>
 				<ContentData>
 				<Link to={"/sales"}>
