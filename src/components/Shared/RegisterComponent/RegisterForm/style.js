@@ -2,10 +2,17 @@ import styled from "styled-components";
 import {
 	IoCameraOutline,
 	IoFastFoodOutline,
-    IoBasketOutline
+    IoBasketOutline,
+    IoBuildOutline,
 } from "react-icons/io5";
 
 export const IconImageProduct= styled(IoFastFoodOutline)`
+	width: 31rem;
+    height: 31rem;
+	stroke: black;
+`;
+
+export const IconImageEmployee= styled(IoBuildOutline)`
 	width: 31rem;
     height: 31rem;
 	stroke: black;
@@ -16,6 +23,33 @@ export const IconImageShop= styled(IoBasketOutline)`
     height: 31rem;
 	stroke: black;
 `;
+
+export const Select = styled.select`
+    /* -webkit-appearance:none;
+    -moz-appearance:none;
+    -ms-appearance:none;
+    appearance:none;
+    outline:0; */
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 0.8rem;
+    min-width: 26.8ch;
+    &:hover {
+    background-color: #eeeeee75;
+    }
+
+    &:focus-visible {
+    outline: 1px solid ${({ theme }) => theme.buttons};;
+    }
+    &::placeholder {
+    color: #000000be;
+    }
+`
+export const Option = styled.option`
+`
 
 export const Context = styled.div`
 	width: 100%;
@@ -135,6 +169,27 @@ export const InputBox = styled.div`
     margin-bottom: 1.1rem; 
 `;
 
+export const InputDate = styled.input`
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 0.8rem;
+    min-width: 26.8ch;
+    
+    &:hover {
+    background-color: #eeeeee75;
+    }
+
+    &:focus-visible {
+    outline: 1px solid ${({ theme }) => theme.buttons};
+    }
+    &::placeholder {
+    color: #000000be;
+    }
+`;
+
 export const Input = styled.input`
     margin: 0.6rem 0;
     padding: 0.8rem 1.2rem;
@@ -220,3 +275,45 @@ export const Exit = styled.a`
 		color: white;
 	}
 `;
+
+export const GenderInputs = styled.div`
+
+    @media screen and (max-width: 1064px) {
+		margin-top: 2rem;
+	}
+`
+
+export const GenderTitle = styled.div`
+    @media screen and (max-width: 1064px) {
+		margin: 0;
+	}
+`
+
+export const H6 = styled.h6`
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000c0;
+`
+
+export const GenderGroup = styled.div`
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+    padding: 0 .5rem;
+
+    @media screen and (max-width: 1064px) {
+		flex-direction: column;
+	}
+`
+
+export const GenderInput = styled.div`
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 1064px) {
+        margin-top: 0.5rem;
+	}
+`
+export const InputRadio = styled.input`
+    margin-right: 0.35rem;
+`

@@ -10,6 +10,7 @@ export const IoTrash= styled(IoTrashBinOutline)`
 	height: 20px;
 	cursor: pointer;
 	stroke: white;
+  opacity: 1;
 
 	&:hover {
 		opacity: 0.5;
@@ -22,6 +23,7 @@ export const IoColorWand= styled(IoColorWandSharp)`
   margin-bottom: 20px;
 	cursor: pointer;
 	stroke: white;
+  opacity: 1;
 
 	&:hover {
 		opacity: 0.5;
@@ -33,6 +35,7 @@ export const IoPencil = styled(IoPencilOutline)`
 	height: 20px;
 	cursor: pointer;
 	stroke: white;
+  opacity: 1;
 
 	&:hover {
 		opacity: 0.5;
@@ -67,7 +70,7 @@ export const Icons = styled.div`
 	align-items: center;
 
 	svg {
-		color: #fff;
+		color: white;
 		opacity: 1;
 		margin-top: 10px;
 		transition: all 0.3s ease;
