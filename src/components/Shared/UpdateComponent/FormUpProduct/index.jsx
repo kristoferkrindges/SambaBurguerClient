@@ -30,6 +30,8 @@ import {
     Input,
     Exit,
     IoFastFood,
+    IoFastFood2,
+    HireMe2,
 } from "../UpdateForm/style";
 import ProductService from '../../../../services/products';
 import { Navigate } from "react-router-dom";
@@ -130,7 +132,7 @@ function FormUpProduct(props) {
                                     onClick={HandlerOpen}
                                     style={open ? { display: "none" } : {}}
                                 >
-                                    <HireMe>Editar</HireMe>
+                                    <HireMe2>Editar</HireMe2>
                                 </Buttons>
                             </CardContent>
                         </Top>
@@ -149,7 +151,7 @@ function FormUpProduct(props) {
                                                     setProductName(e.target.value);
                                                 }}/>
                                             <TextInput>
-                                                <IoPerson></IoPerson>
+                                                <IoFastFood2/>
                                             </TextInput>
                                         </ContainerInput>
                                     </Controller>
@@ -164,7 +166,7 @@ function FormUpProduct(props) {
                                                     setProductPrice(e.target.value);
                                                 }}/>
                                             <TextInput>
-                                                <IoLock></IoLock>
+                                                <IoFastFood2/>
                                             </TextInput>
                                         </ContainerInput>
                                     </Controller>
@@ -181,7 +183,7 @@ function FormUpProduct(props) {
                                                     setProductDescription(e.target.value);
                                                 }}/>
                                             <TextInput>
-                                                <IoMail></IoMail>
+                                                <IoFastFood2/>
                                             </TextInput>
                                         </ContainerInput>
                                     </Controller>

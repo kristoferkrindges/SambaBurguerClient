@@ -80,11 +80,33 @@ export const IoFastFood = styled(IoFastFoodOutline)`
 	}
 `;
 
+export const IoFastFood2 = styled(IoFastFoodOutline)`
+	width: 20px;
+	height: 20px;
+	stroke: white;
+	cursor: pointer;
+
+	&:hover {
+		opacity: 0.5;
+	}
+`;
+
 export const IoBasket = styled(IoBasketOutline)`
 	width: 40px;
 	height: 40px;
 	stroke: ${({ theme }) => theme.text};
 
+	cursor: pointer;
+
+	&:hover {
+		opacity: 0.5;
+	}
+`;
+
+export const IoBasket2 = styled(IoBasketOutline)`
+	width: 20px;
+	height: 20px;
+	stroke: white;
 	cursor: pointer;
 
 	&:hover {
@@ -264,8 +286,8 @@ export const NameSubject = styled.div`
 	align-items: center;
 	font-size: 100%;
 	color: white;
-	margin-top: 1%;
-	margin-bottom: 1%;
+	margin-top: 4%;
+	margin-bottom: 3%;
 `;
 export const Name = styled.span`
 	font-size: 2em;
@@ -289,6 +311,23 @@ export const HireMe = styled.button`
 	background: ${({ theme }) => theme.buttons};
 	outline: none;
 	border: 1px solid ${({ theme }) => theme.bg3};
+	color: white;
+	padding: 8px 22px;
+	border-radius: 20px;
+	font-size: 1.5rem;
+	font-weight: 500;
+	transition: all 0.3s ease;
+	cursor: pointer;
+
+	&:hover {
+		background: #333;
+		opacity: 0.6;
+	}
+`;
+
+export const HireMe2 = styled.button`
+	background: black;
+	outline: none;
 	color: white;
 	padding: 8px 22px;
 	border-radius: 20px;
@@ -552,10 +591,12 @@ export const WhatsappIcon = styled(IoLogoWhatsapp)`
 	height: 30px;
 `;
 export const IoSearc= styled(IoCameraOutline)`
-	width: 2rem;
-    height: 2rem;
+	width: 100%;
+	height: 2rem;
 	cursor: pointer;
 	stroke: black;
+	text-align: center;
+	margin-bottom: 10px;
 
 	&:hover {
 		opacity: 0.5;

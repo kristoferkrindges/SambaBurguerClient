@@ -28,7 +28,7 @@ export default function Product(props) {
                 <CardContent>
                     <Name>{props.name}</Name>
                     <Description>{props.description}</Description>
-                    <Price>{props.price}</Price>
+                    <Price>R$ {props.price}</Price>
                     <Button>Comprar</Button>
                 </CardContent>
             </Card>
