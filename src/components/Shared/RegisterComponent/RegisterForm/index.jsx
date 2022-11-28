@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import { Image  } from "./style";
 import FormRegisterProduct from "../FormRegisterProduct"
 import FormRegisterShop from "../FormRegisterShop"
+import FormRegisterEmployee from '../FormRegisterEmployee';
 
 function RegisterComponent(props){
     if(props.type == "products"){
@@ -12,6 +13,10 @@ function RegisterComponent(props){
     }else if(props.type == "shops"){
         return(
             <FormRegisterShop/>
+        )
+    }else if(props.type == "employees"){
+        return(
+            <FormRegisterEmployee/>
         )
     }
 }
