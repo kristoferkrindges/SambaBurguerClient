@@ -36,9 +36,9 @@ export default function Main() {
                     </Image>
                     <RightBG/>
                     <Social>
+                        {/* <IoCart/>
                         <IoCart/>
-                        <IoCart/>
-                        <IoCart/>
+                        <IoCart/> */}
                     </Social>
                 </MainImg>
             </Section>

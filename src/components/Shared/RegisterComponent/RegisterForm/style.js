@@ -59,6 +59,7 @@ export const Context = styled.div`
     background-color: #ffff;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
     padding: 1rem;
+    margin: auto;
 
     @media screen and (max-width: 1330px) {
 		width: 50%;
