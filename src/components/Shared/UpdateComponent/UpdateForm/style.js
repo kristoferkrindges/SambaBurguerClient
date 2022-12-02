@@ -11,9 +11,31 @@ import {
 	IoMailOutline,
 	IoFastFoodOutline,
 	IoBasketOutline,
+	IoBuildOutline,
 } from "react-icons/io5";
 
 export const IoPerson = styled(IoPersonOutline)`
+	width: 20px;
+	height: 20px;
+	stroke: white;
+	cursor: pointer;
+
+	&:hover {
+		opacity: 0.5;
+	}
+`;
+
+export const IoBuild = styled(IoBuildOutline)`
+	width: 40px;
+	height: 40px;
+	stroke: ${({ theme }) => theme.text};
+	cursor: pointer;
+	&:hover {
+		opacity: 0.5;
+	}
+`;
+
+export const IoBuild2 = styled(IoBuildOutline)`
 	width: 20px;
 	height: 20px;
 	stroke: white;
@@ -667,4 +689,95 @@ export const Exit = styled.a`
 		background: black;
 		color: white;
 	}
+`;
+
+export const Select = styled.select`
+	position: absolute;
+	height: 45px;
+	width: 100%;
+	border-radius: 25px;
+	background: #fff;
+	outline: none;
+	padding-left: 20px;
+	font-size: 1em;
+	color: black;
+	transition: background-color 0.5s ease-in;
+	padding-left: 15px;
+	border: 1px solid #ccc;
+	border-bottom-width: 2px;
+	transition: all 0.3s ease;
+
+	&:hover {
+    background-color: #eeeeee75;
+    }
+
+    &:focus-visible {
+    outline: 1px solid ${({ theme }) => theme.buttons};
+    }
+    &::placeholder {
+    color: #000000be;
+    }
+
+	@media (max-width: 580px) {
+		font-size: 0.9em;
+	}
+
+	@media (max-width: 545px) {
+		font-size: 0.8em;
+	}
+
+	@media (max-width: 520px) {
+		font-size: 0.7em;
+	}
+`
+export const Option = styled.option`
+`
+export const GenderController = styled.div`
+	
+`
+export const GenderInputs = styled.div`
+	margin-top: 1rem;
+    @media screen and (max-width: 1064px) {
+		margin-top: 2rem;
+	}
+`
+
+export const GenderTitle = styled.div`
+    @media screen and (max-width: 1064px) {
+		margin: 0;
+	}
+`
+
+export const H6 = styled.h6`
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000c0;
+`
+
+export const GenderGroup = styled.div`
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+    padding: 0 .5rem;
+
+    @media screen and (max-width: 1064px) {
+		flex-direction: column;
+	}
+`
+
+export const GenderInput = styled.div`
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 1064px) {
+        margin-top: 0.5rem;
+	}
+`
+export const InputRadio = styled.input`
+    margin-right: 0.35rem;
+`
+export const Label = styled.div`
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000c0; 
 `;

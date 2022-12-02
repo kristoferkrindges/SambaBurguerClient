@@ -42,7 +42,7 @@ export const Select = styled.select`
     }
 
     &:focus-visible {
-    outline: 1px solid ${({ theme }) => theme.buttons};;
+    outline: 1px solid ${({ theme }) => theme.buttons};
     }
     &::placeholder {
     color: #000000be;
