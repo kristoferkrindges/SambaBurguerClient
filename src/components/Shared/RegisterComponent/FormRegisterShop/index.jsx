@@ -25,7 +25,7 @@ function FormRegisterShop(props){
 
     //Shop
     const handleSubmitShop = async (evt) => {
-        // evt.preventDefault();
+        evt.preventDefault();
 
         try{
             const shop = await ShopsService.add({
@@ -109,8 +109,8 @@ function FormRegisterShop(props){
 
                     </InputGroup>
                     <ContextButton>
-                        <Button onClick={()=>{
-                            handleSubmitShop();
+                        <Button onClick={(evt)=>{
+                            handleSubmitShop(evt);
                         }}>Cadastrar</Button>
                     </ContextButton>
                     {/* {error && <h1>Error</h1>} */}
