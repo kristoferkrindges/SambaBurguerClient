@@ -61,6 +61,27 @@ export const Background = styled.div`
 	height: 34vh;
 `;
 
+export const Background2 = styled.div`
+	display: flex;
+	justify-content: center;
+	align-items: center;
+`;
+
+export const ModalWrapper2 = styled.div`
+	width: 60vw;
+	height: 50vh;
+	box-shadow: 0 5px 40px rgba(0, 0, 0, 0.6);
+	background: ${({ theme }) => theme.background};
+	color: ${({ theme }) => theme.text};
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	position: absolute;
+	z-index: 999;
+	border-radius: 10px;
+	top: -50px;
+	left: 250px;
+`;
+
 export const ModalWrapper = styled.div`
 	width: 40vw;
 	height: 30vh;
@@ -120,7 +141,7 @@ export const ModalContent = styled.div`
 export const CloseModalButton = styled(MdClose)`
 	cursor: pointer;
 	position: absolute;
-	top: 20px;
+	top: 65px;
 	right: 20px;
 	width: 32px;
 	height: 32px;
