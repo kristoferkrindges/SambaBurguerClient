@@ -8,6 +8,8 @@ import {
   Icons,
   IoColorWand,
   IoTrash,
+  ModalWrapper2,
+  Background2,
 } from "./style";
 import { Link } from "react-router-dom";
 
@@ -30,8 +32,8 @@ export default function Shop({
   if (type == "modal") {
     return (
       <>
-        <Background>
-          <ModalWrapper>
+        <Background2>
+          <ModalWrapper2>
             <ModalImg src={image} alt="market" />
             <ModalContent>
               <h1>{city}</h1>
@@ -40,8 +42,8 @@ export default function Shop({
               <button>Maps</button>
             </ModalContent>
             <CloseModalButton onClick={() => closeModal(false)} />
-          </ModalWrapper>
-        </Background>
+          </ModalWrapper2>
+        </Background2>
       </>
     );
   } else {
