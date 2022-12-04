@@ -58,7 +58,7 @@ export const Container = styled.div`
 		position: absolute;
 		height: 43%;
 		width: 100%;
-		background: white;
+		background: ${({ theme }) => theme.bg};
 		border-radius: 20px 20px 0 0;
 	}
 `;

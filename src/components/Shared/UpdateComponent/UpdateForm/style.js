@@ -158,8 +158,6 @@ export const IoBasket2 = styled(IoBasketOutline)`
 	}
 `;
 
-
-
 export const IoMail2 = styled(IoMailOutline)`
 	width: 40px;
 	height: 40px;
@@ -344,7 +342,6 @@ export const Name = styled.span`
 	}
 `;
 
-
 export const Buttons = styled.div`
 	width: 100%;
 	display: flex;
@@ -390,7 +387,7 @@ export const HireMe2 = styled.button`
 
 export const Bottom = styled.div`
 	width: 60%;
-	background-color: ${({ theme }) => theme.navbar};
+	background-color: ${({ theme }) => theme.bg};
 	padding: 25px 30px;
 	border-radius: 25px;
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
@@ -430,7 +427,11 @@ export const Title = styled.div`
 		height: 3px;
 		width: 150px;
 		border-radius: 5px;
-		background: linear-gradient(135deg, ${({ theme }) => theme.buttons}, rgba(37, 108, 225, 1));
+		background: linear-gradient(
+			135deg,
+			${({ theme }) => theme.buttons},
+			rgba(37, 108, 225, 1)
+		);
 	}
 `;
 
@@ -634,7 +635,7 @@ export const WhatsappIcon = styled(IoLogoWhatsapp)`
 	width: 30px;
 	height: 30px;
 `;
-export const IoSearc= styled(IoCameraOutline)`
+export const IoSearc = styled(IoCameraOutline)`
 	width: 100%;
 	height: 2rem;
 	cursor: pointer;
@@ -648,52 +649,52 @@ export const IoSearc= styled(IoCameraOutline)`
 `;
 
 export const IconButton = styled.div`
-    display: flex;
-    align-items: center;
+	display: flex;
+	align-items: center;
 	text-align: center;
-	width: 100%;  
+	width: 100%;
 `;
 
 export const ModalImage = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 32%;
-    height: 8vw;
-    position: absolute;
-    background-color: ${({ theme }) => theme.buttons};
-    z-index: 5;
-    border-radius: 10px;
-    
-    box-shadow: 0 5px 40px rgba(0, 0, 0, 0.6);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 32%;
+	height: 8vw;
+	position: absolute;
+	background-color: ${({ theme }) => theme.buttons};
+	z-index: 5;
+	border-radius: 10px;
 
-    input{
-        width: 100%;
-    }
-`
+	box-shadow: 0 5px 40px rgba(0, 0, 0, 0.6);
+
+	input {
+		width: 100%;
+	}
+`;
 export const Input = styled.input`
-    margin: 0.6rem 0;
-    padding: 0.8rem 1.2rem;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 1px 1px 6px #0000001c;
-    font-size: 0.8rem;
-    
-    &:hover {
-    background-color: #eeeeee75;
-    }
+	margin: 0.6rem 0;
+	padding: 0.8rem 1.2rem;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 1px 1px 6px #0000001c;
+	font-size: 0.8rem;
 
-    &:focus-visible {
-    outline: 1px solid ${({ theme }) => theme.buttons};;
-    }
-    &::placeholder {
-    color: #000000be;
-    }
+	&:hover {
+		background-color: #eeeeee75;
+	}
+
+	&:focus-visible {
+		outline: 1px solid ${({ theme }) => theme.buttons};
+	}
+	&::placeholder {
+		color: #000000be;
+	}
 `;
 
 export const Exit = styled.a`
-    width: 30%;
+	width: 30%;
 	border-radius: 50px;
 	background: ${({ theme }) => theme.text};
 	white-space: nowrap;
@@ -730,15 +731,15 @@ export const Select = styled.select`
 	transition: all 0.3s ease;
 
 	&:hover {
-    background-color: #eeeeee75;
-    }
+		background-color: #eeeeee75;
+	}
 
-    &:focus-visible {
-    outline: 1px solid ${({ theme }) => theme.buttons};
-    }
-    &::placeholder {
-    color: #000000be;
-    }
+	&:focus-visible {
+		outline: 1px solid ${({ theme }) => theme.buttons};
+	}
+	&::placeholder {
+		color: #000000be;
+	}
 
 	@media (max-width: 580px) {
 		font-size: 0.9em;
@@ -751,55 +752,52 @@ export const Select = styled.select`
 	@media (max-width: 520px) {
 		font-size: 0.7em;
 	}
-`
-export const Option = styled.option`
-`
-export const GenderController = styled.div`
-	
-`
+`;
+export const Option = styled.option``;
+export const GenderController = styled.div``;
 export const GenderInputs = styled.div`
 	margin-top: 1rem;
-    @media screen and (max-width: 1064px) {
+	@media screen and (max-width: 1064px) {
 		margin-top: 2rem;
 	}
-`
+`;
 
 export const GenderTitle = styled.div`
-    @media screen and (max-width: 1064px) {
+	@media screen and (max-width: 1064px) {
 		margin: 0;
 	}
-`
+`;
 
 export const H6 = styled.h6`
-    font-size: 0.75rem;
-    font-weight: 600;
-    color: #000000c0;
-`
+	font-size: 0.75rem;
+	font-weight: 600;
+	color: #000000c0;
+`;
 
 export const GenderGroup = styled.div`
-    display: flex;
-    justify-content: space-between;
-    margin-top: 0.62rem;
-    padding: 0 .5rem;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 0.62rem;
+	padding: 0 0.5rem;
 
-    @media screen and (max-width: 1064px) {
+	@media screen and (max-width: 1064px) {
 		flex-direction: column;
 	}
-`
+`;
 
 export const GenderInput = styled.div`
-    display: flex;
-    align-items: center;
+	display: flex;
+	align-items: center;
 
-    @media screen and (max-width: 1064px) {
-        margin-top: 0.5rem;
+	@media screen and (max-width: 1064px) {
+		margin-top: 0.5rem;
 	}
-`
+`;
 export const InputRadio = styled.input`
-    margin-right: 0.35rem;
-`
+	margin-right: 0.35rem;
+`;
 export const Label = styled.div`
-    font-size: 0.75rem;
-    font-weight: 600;
-    color: #000000c0; 
+	font-size: 0.75rem;
+	font-weight: 600;
+	color: #000000c0;
 `;

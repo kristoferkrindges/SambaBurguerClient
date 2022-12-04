@@ -16,8 +16,8 @@ export const Card = styled.div`
 	h6 {
 		letter-spacing: 0.1rem;
 		text-transform: uppercase;
-        color: black;
-        font-weight: bold;
+		color: ${({ theme }) => theme.text};
+		font-weight: bold;
 	}
 `;
 export const Left = styled.div`
@@ -28,8 +28,8 @@ export const Left = styled.div`
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
-    background-color: ${({ theme }) => theme.buttons};
-    position: relative;
+	background-color: ${({ theme }) => theme.buttons};
+	position: relative;
 	&:hover {
 		opacity: 0.5;
 	}
@@ -39,7 +39,7 @@ export const Left = styled.div`
 	img {
 		width: 130px;
 		height: 130px;
-        object-fit: cover;
+		object-fit: cover;
 		border-radius: 35px;
 	}
 `;
@@ -50,14 +50,14 @@ export const Right = styled.div`
 	flex-direction: column;
 	align-items: start;
 	justify-content: space-between;
-	background-color: white;
+	background-color: ${({ theme }) => theme.bg};
 	p {
 		font-size: 0.9rem;
 		color: var(--black-text);
 	}
-    h2{
-        font-size: 1.1rem;
-    }
+	h2 {
+		font-size: 1.1rem;
+	}
 `;
 export const Div = styled.div``;
 

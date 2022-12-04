@@ -1,15 +1,13 @@
 import styled from "styled-components";
-import { 
-	IoStar, 
+import {
+	IoStar,
 	IoPencilOutline,
 	IoTrashBinOutline,
 	IoColorWandSharp,
 	IoBasketOutline,
-} 
-	
-from "react-icons/io5";
+} from "react-icons/io5";
 
-export const IoTrash= styled(IoTrashBinOutline)`
+export const IoTrash = styled(IoTrashBinOutline)`
 	width: 20px;
 	height: 20px;
 	cursor: pointer;
@@ -18,24 +16,12 @@ export const IoTrash= styled(IoTrashBinOutline)`
 
 	&:hover {
 		opacity: 0.5;
-}
+	}
 `;
 
-export const IoBasket= styled(IoBasketOutline)`
+export const IoBasket = styled(IoBasketOutline)`
 	width: 20px;
 	height: 20px;
-	cursor: pointer;
-	stroke: white;
-
-	&:hover {
-		opacity: 0.5;
-}
-`;
-
-export const IoColorWand= styled(IoColorWandSharp)`
-	width: 20px;
-	height: 20px;
-  	margin-bottom: 10px;
 	cursor: pointer;
 	stroke: white;
 
@@ -44,14 +30,25 @@ export const IoColorWand= styled(IoColorWandSharp)`
 	}
 `;
 
+export const IoColorWand = styled(IoColorWandSharp)`
+	width: 20px;
+	height: 20px;
+	margin-bottom: 10px;
+	cursor: pointer;
+	stroke: white;
+
+	&:hover {
+		opacity: 0.5;
+	}
+`;
 
 export const Container = styled.div`
-	background: #fff;
+	background: ${({ theme }) => theme.bg};
 	border-radius: 20px;
 	position: relative;
 	margin: 20px 0;
 	min-height: 40vh;
-    width: 25vw;
+	width: 25vw;
 	/* height: 42vh;
 	width: 36vh; */
 	cursor: pointer;

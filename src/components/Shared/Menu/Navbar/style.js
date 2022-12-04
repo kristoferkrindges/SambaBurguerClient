@@ -1,10 +1,7 @@
 import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
-import {
-	IoContrastOutline,
-	IoContrastSharp
-} from "react-icons/io5";
+import { IoContrastOutline, IoContrastSharp } from "react-icons/io5";
 
 export const IoCart = styled(IoContrastOutline)`
 	width: 20px;
@@ -36,7 +33,6 @@ export const NavbarContainer = styled.div`
 	width: 100%;
 	padding: 0 24px;
 	max-width: 1600px;
-	
 `;
 
 export const NavLogo = styled(LinkR)`
@@ -58,7 +54,7 @@ export const NavLogo = styled(LinkR)`
 		font-size: 20px;
 	}
 	h1:hover {
-		color: yellow;
+		color: #fc4c35;
 	}
 	@media screen and (max-width: 768px) {
 		h1 {
@@ -77,7 +73,7 @@ export const MobileIcon = styled.div`
 		transform: translate(-100%, 60%);
 		font-size: 1.8rem;
 		cursor: pointer;
-		color: ${({ theme }) => theme.buttons}
+		color: ${({ theme }) => theme.buttons};
 	}
 `;
 
@@ -97,23 +93,23 @@ export const NavItem = styled.li`
 `;
 
 export const NavLink = styled(LinkR)`
-  color: ${({ theme }) => theme.text};
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  padding: 0 1rem;
-  height: 100%;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  &.active {
-    color: #15cdfc;
-  }
-  &:hover {
+	color: ${({ theme }) => theme.text};
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	padding: 0 1rem;
+	height: 100%;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+	&.active {
+		color: #15cdfc;
+	}
+	&:hover {
 		transition: all 0.2s ease-in-out;
-		border-bottom: 1px solid yellow;
-		border-top: 1px solid yellow;
-		color: yellow;
+		border-bottom: 1px solid #fc4c35;
+		border-top: 1px solid #fc4c35;
+		color: #fc4c35;
 	}
 `;
 
@@ -129,7 +125,7 @@ export const NavLinks = styled(LinkS)`
 		border-bottom: 3px solid #01bf71;
 	}
 	&:hover {
-		color: #94449e;
+		color: #fc4c35;
 		font-size: 20px;
 	}
 `;
