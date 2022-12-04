@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# Documentação API SambaBurguer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Documentação
 
-## Available Scripts
+FrontEnd criado para a realização de um trabalho, solicitado na cadeira de Frameworks para Desenvolvimento Web 1, com a finalidade de consumir e construir Componentes
+através dos dados fornecidos pela Api ASPNET CORE.
+[Link para acessar a Api(BackEnd) da aplicação](https://github.com/kristoferkrindges/SambaBurguerApiFinal)
 
-In the project directory, you can run:
+## Breve Resumo:
+O projeto será desenvolvido em formato de site corporativo na qual um usuário ADMIN irá realizar os cadastros, atualizações exclusões e exibições parciais dos dados
+da respectiva empresa SambaBurguer.
+
+## Stack Tecnológico
+FrontEnd criado em ReactJS
+- ReactJS
+- StyledComponents
+- ReactIcons
+- React Elastic Carousel
+- React Router DOM
+- React Toastify
+- Axios
+
+## Url base
+- [http://localhost:3000](http://localhost:3000)
+
+## Para rodar o projeto utilize o comando:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Figma Tela
+![Tela do Figma](https://cdn.discordapp.com/attachments/1038889467689304137/1049068552424001626/image.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Telas da aplicação
 
-### `npm test`
+## Home
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Tela de Home](https://cdn.discordapp.com/attachments/1038889467689304137/1049068014391283834/home.png)
 
-### `npm run build`
+## Cadastro
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Tela de Cadastro](https://cdn.discordapp.com/attachments/1038889467689304137/1049068826353999963/cadastro.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Update
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Tela de Update](https://cdn.discordapp.com/attachments/1038889467689304137/1049068991957708850/Editar.png)
 
-### `npm run eject`
+## Clientes
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![Tela de Clientes](https://cdn.discordapp.com/attachments/1038889467689304137/1049069342647664751/Clientes.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Produtos
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![Tela de Produtos](https://cdn.discordapp.com/attachments/1038889467689304137/1049069620922945596/Produtos.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Franquias
 
-## Learn More
+![Tela de Franquias](https://cdn.discordapp.com/attachments/1038889467689304137/1049069762757525524/Franquias.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Funcionários
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![Tela de Funcionários](https://cdn.discordapp.com/attachments/1038889467689304137/1049069958602166314/funcionarios.png)
 
-### Code Splitting
+## Vendas
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![Tela de Vendas](https://cdn.discordapp.com/attachments/1038889467689304137/1049070221576634429/Vendas.png)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
