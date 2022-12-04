@@ -2,9 +2,10 @@ import styled from "styled-components";
 import {
 	IoCameraOutline,
 	IoFastFoodOutline,
-	IoBasketOutline,
-	IoBuildOutline,
-	IoPeopleOutline,
+    IoBasketOutline,
+    IoBuildOutline,
+    IoCartOutline,
+    IoPeopleOutline,
 } from "react-icons/io5";
 
 export const IconImageProduct = styled(IoFastFoodOutline)`
@@ -28,6 +29,12 @@ export const IconImageCustomer = styled(IoPeopleOutline)`
 export const IconImageShop = styled(IoBasketOutline)`
 	width: 31rem;
 	height: 31rem;
+	stroke: black;
+`;
+
+export const IconImageSale= styled(IoCartOutline)`
+	width: 31rem;
+    height: 31rem;
 	stroke: black;
 `;
 

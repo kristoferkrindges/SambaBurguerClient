@@ -9,6 +9,7 @@ import HomeScreen from "./Pages/Home";
 import DashboardScreen from "./Pages/Dashboard";
 import ProductsScreen from "./Pages/Products";
 import ShopsScreen from "./Pages/Shops";
+import SalesScreen from "./Pages/Sales"
 import EmployeesScreen from "./Pages/Employees";
 import CustomersScreen from "./Pages/Customers";
 import Login from "./Pages/Login";
@@ -17,6 +18,7 @@ import RegisterScreen from "./Pages/RegisterPage";
 import UpdateScreen from "./Pages/UpdatePage";
 export default function Routess() {
 	return (
+
 		<Router>
 			<Routes>
 				<Route path="/" element={<HomeScreen />} />
@@ -58,6 +60,9 @@ export default function Routess() {
 					path="/customers/update/:id"
 					element={<UpdateScreen type="customers" />}
 				/>
+        <Route path="/sales" element={<SalesScreen />} />
+				<Route path="/sales/register" element={<RegisterScreen type="sales"/>}/>
+				<Route path="/sales/update/:id" element={<UpdateScreen type="sales"/>}/>
 				<Route path="*" element={<ErrorPage />} />
 			</Routes>
 		</Router>

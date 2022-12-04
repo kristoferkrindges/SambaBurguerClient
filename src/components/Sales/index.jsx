@@ -8,42 +8,22 @@ import {
   BtnContent,
   Button,
 } from "./style";
-import Employee from "../Shared/Employee";
+
 import Sidebar from "../Shared/Sidebar";
-import EmployeeService from "../../services/employees";
+import SalesService from "../../services/sales";
 import SearchBar from "../Shared/SearchBar";
 import { Link } from "react-router-dom";
 import Carrousel from "react-elastic-carousel";
 import ModalDelete from "../Shared/ModalDelete";
+import Sale from "../Shared/Sale";
 
-export default function Employees(props) {
-  const [employees, setEmployees] = useState([]);
-
+export default function Sales(props) {
   const [id, setId] = useState("");
   // children
   const [result, setResult] = useState("");
 
   //Modal
   const [modal, setModal] = useState(false);
-
-  useEffect(() => {
-    fetchEmployees();
-  }, []);
-  // Get
-  async function fetchEmployees() {
-    const response = await EmployeeService.getAll();
-    if (response.data.length >= 1) {
-      setEmployees(response.data);
-    }
-  }
-  console.log(employees);
-  // Delete
-  async function DeleteEmployees() {
-    const response = await EmployeeService.delete(id);
-    setModal(false);
-    const r = employees.filter((item) => item.id !== id);
-    setEmployees(r);
-  }
 
   //Pegar dado do SearchBar componente filho
   const updateResult = (r) => {
@@ -56,6 +36,26 @@ export default function Employees(props) {
     setId(r);
     console.log(r);
   };
+  const [sales, setSales] = useState([]);
+  // Get
+  useEffect(() => {
+    fetchSales();
+  }, []);
+  async function fetchSales() {
+    const response = await SalesService.getAll();
+    if (response.data.length >= 1) {
+      setSales(response.data);
+    }
+  }
+  console.log(sales);
+  // Delete
+  async function DeleteSales() {
+    const response = await SalesService.delete(id);
+    setModal(false);
+    const r = sales.filter((item) => item.id !== id);
+    setSales(r);
+  }
+
   //Carrousel
   const breakPoints = [
     { width: 500, itemsToShow: 1 },
@@ -69,28 +69,28 @@ export default function Employees(props) {
       <Option>
         <Content>
           <Title>
-            <span>Funcionários</span>
+            <span>Vendas</span>
           </Title>
           <BtnContent>
-            <Link to="/employees/register">
+            <Link to="/sales/register">
               <Button>Cadastrar</Button>
             </Link>
           </BtnContent>
           <Cont>
             <SearchBar
               placeholder="Procure por funcionários"
-              data={employees}
+              data={sales}
               updateResult={updateResult}
             />
           </Cont>
           {modal ? (
-            <ModalDelete modal={handleModal} yes={DeleteEmployees} />
+            <ModalDelete modal={handleModal} yes={DeleteSales} />
           ) : (
             <></>
           )}
           <Carrousel breakPoints={breakPoints}>
-            {employees.length > 0 &&
-              employees
+            {sales.length > 0 &&
+              sales
                 .filter((value) => {
                   if (result === "") {
                     return value;
@@ -101,21 +101,17 @@ export default function Employees(props) {
                   }
                 })
                 .map((value, key) => (
-                  <Employee
+                  <Sale
                     key={key}
                     id={value.id}
-                    shopId={value.shopId}
-                    imageUrl={value.imageUrl}
-                    name={value.name}
-                    gender={value.gender}
-                    cpf={value.cpf}
-                    email={value.email}
-                    birthDate={value.birthdate}
-                    address={value.address}
-                    func={value.type}
+                    productId={value.productId}
+                    product={value.product}
+                    constomerId={value.customerId}
+                    customer={value.customer}
+                    employeeId={value.employeeId}
+                    employee={value.employee}
                     modal={handleModal}
                     getId={handleId}
-                    stars={5}
                   />
                 ))}
           </Carrousel>
