@@ -5,23 +5,30 @@ import {
     IoBasketOutline,
     IoBuildOutline,
     IoCartOutline,
+    IoPeopleOutline,
 } from "react-icons/io5";
 
-export const IconImageProduct= styled(IoFastFoodOutline)`
+export const IconImageProduct = styled(IoFastFoodOutline)`
 	width: 31rem;
-    height: 31rem;
+	height: 31rem;
 	stroke: black;
 `;
 
-export const IconImageEmployee= styled(IoBuildOutline)`
+export const IconImageEmployee = styled(IoBuildOutline)`
 	width: 31rem;
-    height: 31rem;
+	height: 31rem;
 	stroke: black;
 `;
 
-export const IconImageShop= styled(IoBasketOutline)`
+export const IconImageCustomer = styled(IoPeopleOutline)`
 	width: 31rem;
-    height: 31rem;
+	height: 31rem;
+	stroke: black;
+`;
+
+export const IconImageShop = styled(IoBasketOutline)`
+	width: 31rem;
+	height: 31rem;
 	stroke: black;
 `;
 
@@ -32,56 +39,55 @@ export const IconImageSale= styled(IoCartOutline)`
 `;
 
 export const Select = styled.select`
-    /* -webkit-appearance:none;
+	/* -webkit-appearance:none;
     -moz-appearance:none;
     -ms-appearance:none;
     appearance:none;
     outline:0; */
-    margin: 0.6rem 0;
-    padding: 0.8rem 1.2rem;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 1px 1px 6px #0000001c;
-    font-size: 0.8rem;
-    min-width: 26.8ch;
-    &:hover {
-    background-color: #eeeeee75;
-    }
+	margin: 0.6rem 0;
+	padding: 0.8rem 1.2rem;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 1px 1px 6px #0000001c;
+	font-size: 0.8rem;
+	min-width: 26.8ch;
+	&:hover {
+		background-color: #eeeeee75;
+	}
 
-    &:focus-visible {
-    outline: 1px solid ${({ theme }) => theme.buttons};
-    }
-    &::placeholder {
-    color: #000000be;
-    }
-`
-export const Option = styled.option`
-`
+	&:focus-visible {
+		outline: 1px solid ${({ theme }) => theme.buttons};
+	}
+	&::placeholder {
+		color: #000000be;
+	}
+`;
+export const Option = styled.option``;
 
 export const Context = styled.div`
 	width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffff;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
-    padding: 1rem;
-    margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #ffff;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+	padding: 1rem;
+	margin: auto;
 
-    @media screen and (max-width: 1330px) {
+	@media screen and (max-width: 1330px) {
 		width: 50%;
-        flex-direction: column;
+		flex-direction: column;
 	}
 
-    @media screen and (max-width: 1064px) {
+	@media screen and (max-width: 1064px) {
 		width: 90%;
-        height: auto;
+		height: auto;
 	}
 `;
 
-export const IoSearc= styled(IoCameraOutline)`
+export const IoSearc = styled(IoCameraOutline)`
 	width: 2rem;
-    height: 2rem;
+	height: 2rem;
 	cursor: pointer;
 	stroke: black;
 
@@ -92,76 +98,72 @@ export const IoSearc= styled(IoCameraOutline)`
 
 export const Image = styled.div`
 	width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: ${({ theme }) => theme.buttons};;
-    border-radius: 10%;
-    padding: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: ${({ theme }) => theme.buttons};
+	border-radius: 10%;
+	padding: 1rem;
 
-    & img{
-        width: 100%;
-        border-radius: 10%;
-    }
+	& img {
+		width: 100%;
+		border-radius: 10%;
+	}
 
-    @media screen and (max-width: 1330px) {
+	@media screen and (max-width: 1330px) {
 		display: none;
 	}
 `;
 
 export const ContentForm = styled.div`
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    padding: 3rem;
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
+	padding: 3rem;
 
-    @media screen and (max-width: 1330px) {
+	@media screen and (max-width: 1330px) {
 		width: 100%;
 	}
 `;
 
-export const Form = styled.form`
-     
-`;
+export const Form = styled.form``;
 
 export const FormHeader = styled.div`
-    margin-bottom: 3rem;
-    display: flex;
-    justify-content: space-between;  
+	margin-bottom: 3rem;
+	display: flex;
+	justify-content: space-between;
 `;
 
 export const IconButton = styled.div`
-    display: flex;
-    align-items: center;  
+	display: flex;
+	align-items: center;
 `;
 
-export const Title = styled.div`
-      
-`;
+export const Title = styled.div``;
 
 export const H1 = styled.h1`
-    &::after {
-    content: '';
-    display: block;
-    width: 5rem;
-    height: 0.3rem;
-    background-color: ${({ theme }) => theme.buttons};
-    margin: 0 auto;
-    position: absolute;
-    border-radius: 10px;
-}
+	&::after {
+		content: "";
+		display: block;
+		width: 5rem;
+		height: 0.3rem;
+		background-color: ${({ theme }) => theme.buttons};
+		margin: 0 auto;
+		position: absolute;
+		border-radius: 10px;
+	}
 `;
 
 export const InputGroup = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 1rem 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 1rem 0;
 
-    @media screen and (max-width: 1064px) {
+	@media screen and (max-width: 1064px) {
 		/* flex-direction: column;
         z-index: 5;
         padding-right: 5rem;
@@ -172,99 +174,97 @@ export const InputGroup = styled.div`
 `;
 
 export const InputBox = styled.div`
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1.1rem; 
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 1.1rem;
 `;
 
 export const InputDate = styled.input`
-    margin: 0.6rem 0;
-    padding: 0.8rem 1.2rem;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 1px 1px 6px #0000001c;
-    font-size: 0.8rem;
-    min-width: 26.8ch;
-    
-    &:hover {
-    background-color: #eeeeee75;
-    }
+	margin: 0.6rem 0;
+	padding: 0.8rem 1.2rem;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 1px 1px 6px #0000001c;
+	font-size: 0.8rem;
+	min-width: 26.8ch;
 
-    &:focus-visible {
-    outline: 1px solid ${({ theme }) => theme.buttons};
-    }
-    &::placeholder {
-    color: #000000be;
-    }
+	&:hover {
+		background-color: #eeeeee75;
+	}
+
+	&:focus-visible {
+		outline: 1px solid ${({ theme }) => theme.buttons};
+	}
+	&::placeholder {
+		color: #000000be;
+	}
 `;
 
 export const Input = styled.input`
-    margin: 0.6rem 0;
-    padding: 0.8rem 1.2rem;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 1px 1px 6px #0000001c;
-    font-size: 0.8rem;
-    
-    &:hover {
-    background-color: #eeeeee75;
-    }
+	margin: 0.6rem 0;
+	padding: 0.8rem 1.2rem;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 1px 1px 6px #0000001c;
+	font-size: 0.8rem;
 
-    &:focus-visible {
-    outline: 1px solid ${({ theme }) => theme.buttons};;
-    }
-    &::placeholder {
-    color: #000000be;
-    }
+	&:hover {
+		background-color: #eeeeee75;
+	}
+
+	&:focus-visible {
+		outline: 1px solid ${({ theme }) => theme.buttons};
+	}
+	&::placeholder {
+		color: #000000be;
+	}
 `;
 
 export const Label = styled.div`
-    font-size: 0.75rem;
-    font-weight: 600;
-    color: #000000c0; 
+	font-size: 0.75rem;
+	font-weight: 600;
+	color: #000000c0;
 `;
 
-export const ContextButton = styled.div`
-    
-`;
+export const ContextButton = styled.div``;
 
 export const Button = styled.button`
-    width: 100%;
-    margin-top: 2.5rem;
-    border: none;
-    background-color: ${({ theme }) => theme.buttons};
-    padding: 0.62rem;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 0.93rem;
-    font-weight: bold;
-    color: black;
+	width: 100%;
+	margin-top: 2.5rem;
+	border: none;
+	background-color: ${({ theme }) => theme.buttons};
+	padding: 0.62rem;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 0.93rem;
+	font-weight: bold;
+	color: black;
 
-    &:hover {
-        opacity: 0.7
-    }
+	&:hover {
+		opacity: 0.7;
+	}
 `;
 
 export const ModalImage = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 32%;
-    height: 8vw;
-    position: absolute;
-    background-color: ${({ theme }) => theme.buttons};
-    z-index: 5;
-    border-radius: 10px;
-    
-    box-shadow: 0 5px 40px rgba(0, 0, 0, 0.6);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 32%;
+	height: 8vw;
+	position: absolute;
+	background-color: ${({ theme }) => theme.buttons};
+	z-index: 5;
+	border-radius: 10px;
 
-    input{
-        width: 100%;
-    }
-`
+	box-shadow: 0 5px 40px rgba(0, 0, 0, 0.6);
+
+	input {
+		width: 100%;
+	}
+`;
 export const Exit = styled.a`
-    width: 18%;
+	width: 18%;
 	border-radius: 50px;
 	background: ${({ theme }) => theme.text};
 	white-space: nowrap;
@@ -285,43 +285,42 @@ export const Exit = styled.a`
 `;
 
 export const GenderInputs = styled.div`
-
-    @media screen and (max-width: 1064px) {
+	@media screen and (max-width: 1064px) {
 		margin-top: 2rem;
 	}
-`
+`;
 
 export const GenderTitle = styled.div`
-    @media screen and (max-width: 1064px) {
+	@media screen and (max-width: 1064px) {
 		margin: 0;
 	}
-`
+`;
 
 export const H6 = styled.h6`
-    font-size: 0.75rem;
-    font-weight: 600;
-    color: #000000c0;
-`
+	font-size: 0.75rem;
+	font-weight: 600;
+	color: #000000c0;
+`;
 
 export const GenderGroup = styled.div`
-    display: flex;
-    justify-content: space-between;
-    margin-top: 0.62rem;
-    padding: 0 .5rem;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 0.62rem;
+	padding: 0 0.5rem;
 
-    @media screen and (max-width: 1064px) {
+	@media screen and (max-width: 1064px) {
 		flex-direction: column;
 	}
-`
+`;
 
 export const GenderInput = styled.div`
-    display: flex;
-    align-items: center;
+	display: flex;
+	align-items: center;
 
-    @media screen and (max-width: 1064px) {
-        margin-top: 0.5rem;
+	@media screen and (max-width: 1064px) {
+		margin-top: 0.5rem;
 	}
-`
+`;
 export const InputRadio = styled.input`
-    margin-right: 0.35rem;
-`
+	margin-right: 0.35rem;
+`;
