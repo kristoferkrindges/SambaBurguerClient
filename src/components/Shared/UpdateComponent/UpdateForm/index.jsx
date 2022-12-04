@@ -2,6 +2,7 @@ import React from "react";
 import FormUpProduct from "../FormUpProduct";
 import FormUpShop from "../FormUpShop";
 import FormUpEmployee from "../FormUpEmployee";
+import FormUpSale from "../FormUpSale";
 
 function UpdateForm(props) {
   if (props.type == "products") {
@@ -10,6 +11,8 @@ function UpdateForm(props) {
     return <FormUpShop></FormUpShop>;
   } else if (props.type == "employees") {
     return <FormUpEmployee />;
+  } else if (props.type == "sales") {
+    return <FormUpSale />;
   }
 }
 

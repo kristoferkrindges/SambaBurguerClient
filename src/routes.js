@@ -9,6 +9,7 @@ import HomeScreen from "./Pages/Home";
 import DashboardScreen from "./Pages/Dashboard";
 import ProductsScreen from "./Pages/Products"
 import ShopsScreen from "./Pages/Shops";
+import SalesScreen from "./Pages/Sales"
 import EmployeesScreen from "./Pages/Employees";
 import Login from "./Pages/Login";
 import ErrorPage from "./Pages/ErrorPage";
@@ -31,6 +32,9 @@ export default function Routess() {
 						<Route path="/employees" element={<EmployeesScreen />} />
 						<Route path="/employees/register" element={<RegisterScreen type="employees"/>}/>
 						<Route path="/employees/update/:id" element={<UpdateScreen type="employees"/>}/>
+						<Route path="/sales" element={<SalesScreen />} />
+						<Route path="/sales/register" element={<RegisterScreen type="sales"/>}/>
+						<Route path="/sales/update/:id" element={<UpdateScreen type="sales"/>}/>
 						<Route path="*" element={<ErrorPage />} />
 					</Routes>
 				</Router>
