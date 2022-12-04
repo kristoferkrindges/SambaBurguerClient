@@ -12,6 +12,7 @@ import {
 	IoFastFoodOutline,
 	IoBasketOutline,
 	IoBuildOutline,
+	IoCartOutline,
 } from "react-icons/io5";
 
 export const IoPerson = styled(IoPersonOutline)`
@@ -30,6 +31,27 @@ export const IoBuild = styled(IoBuildOutline)`
 	height: 40px;
 	stroke: ${({ theme }) => theme.text};
 	cursor: pointer;
+	&:hover {
+		opacity: 0.5;
+	}
+`;
+
+export const IoCart = styled(IoCartOutline)`
+	width: 40px;
+	height: 40px;
+	stroke: ${({ theme }) => theme.text};
+	cursor: pointer;
+	&:hover {
+		opacity: 0.5;
+	}
+`;
+
+export const IoCart2 = styled(IoCartOutline)`
+	width: 20px;
+	height: 20px;
+	stroke: white;
+	cursor: pointer;
+
 	&:hover {
 		opacity: 0.5;
 	}

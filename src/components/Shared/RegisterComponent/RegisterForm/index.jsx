@@ -16,8 +16,7 @@ function RegisterComponent(props) {
   } else if (props.type == "sales") {
     return <FormRegisterSale />;
   } else if (props.type == "customers") {
-		return <FormRegisterCustomer />;
-	}
-
-
+    return <FormRegisterCustomer />;
+  }
+}
 export default RegisterComponent;

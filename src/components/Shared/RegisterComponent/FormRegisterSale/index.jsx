@@ -26,7 +26,7 @@ import {
 import EmployeeService from "../../../../services/employees";
 import SalesService from "../../../../services/sales";
 import ProductsService from "../../../../services/products";
-//import CustomersService from "../../../../services/customers";
+import CustomerService from "../../../../services/customers";
 import { Navigate } from "react-router-dom";
 import { toast } from "react-toastify";
 
@@ -77,7 +77,7 @@ function FormRegisterSale(props) {
   }, []);
   // Get
   async function fetchCustomers() {
-    const response = await EmployeeService.getAll();
+    const response = await CustomerService.getAll();
     if (response.data.length >= 1) {
       setCustomers(response.data);
     }
