@@ -1,24 +1,20 @@
-import React, {useState, useEffect} from 'react'
-import { Image  } from "./style";
-import FormRegisterProduct from "../FormRegisterProduct"
-import FormRegisterShop from "../FormRegisterShop"
-import FormRegisterEmployee from '../FormRegisterEmployee';
+import React, { useState, useEffect } from "react";
+import { Image } from "./style";
+import FormRegisterProduct from "../FormRegisterProduct";
+import FormRegisterShop from "../FormRegisterShop";
+import FormRegisterEmployee from "../FormRegisterEmployee";
+import FormRegisterCustomer from "../FormRegisterCustomer";
 
-function RegisterComponent(props){
-    if(props.type == "products"){
-        return(
-            <FormRegisterProduct/>
-            
-        )
-    }else if(props.type == "shops"){
-        return(
-            <FormRegisterShop/>
-        )
-    }else if(props.type == "employees"){
-        return(
-            <FormRegisterEmployee/>
-        )
-    }
+function RegisterComponent(props) {
+	if (props.type == "products") {
+		return <FormRegisterProduct />;
+	} else if (props.type == "shops") {
+		return <FormRegisterShop />;
+	} else if (props.type == "employees") {
+		return <FormRegisterEmployee />;
+	} else if (props.type == "customers") {
+		return <FormRegisterCustomer />;
+	}
 }
 
-export default RegisterComponent
+export default RegisterComponent;
