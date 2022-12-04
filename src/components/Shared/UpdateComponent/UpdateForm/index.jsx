@@ -14,7 +14,8 @@ function UpdateForm(props) {
     return <FormUpEmployee />;
   } else if (props.type == "sales") {
     return <FormUpSale />;
-  }else if (props.type == "customers") {
-		return <FormUpCustomer />;
-	}
+  } else if (props.type == "customers") {
+    return <FormUpCustomer />;
+  }
+}
 export default UpdateForm;

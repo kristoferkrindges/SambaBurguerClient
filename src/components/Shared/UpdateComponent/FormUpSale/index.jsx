@@ -16,15 +16,11 @@ import {
   Title,
   UserDetails,
   InputBox,
-  InputName,
   TextInput,
   Left,
   Right,
   ContainerInput,
   Controller,
-  IoMail,
-  IoLock,
-  IoPerson,
   IoSearc,
   ModalImage,
   Input,
@@ -34,19 +30,13 @@ import {
   IoBuild,
   Select,
   Option,
-  GenderInputs,
-  GenderTitle,
-  H6,
-  GenderGroup,
-  GenderInput,
-  InputRadio,
-  Label,
-  GenderController,
+  IoCart2,
+  IoCart,
 } from "../UpdateForm/style";
 import EmployeeService from "../../../../services/employees";
 import ProductsService from "../../../../services/products";
 import SalesService from "../../../../services/sales";
-//import CustomersService from "../../../../services/customers";
+import CustomerService from "../../../../services/customers";
 import { Navigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import { toast } from "react-toastify";
@@ -122,17 +112,17 @@ function FormUpSale(props) {
   }
 
   //Customers
-  //   const [customers, setCustomers] = useState([]);
-  //   useEffect(() => {
-  //     fetchCustomers();
-  //   }, []);
-  //   // Get
-  //   async function fetchCustomers() {
-  //     const response = await CustomersService.getAll();
-  //     if (response.data.length >= 1) {
-  //       setCustomers(response.data);
-  //     }
-  //   }
+  const [customers, setCustomers] = useState([]);
+  useEffect(() => {
+    fetchCustomers();
+  }, []);
+  // Get
+  async function fetchCustomers() {
+    const response = await CustomerService.getAll();
+    if (response.data.length >= 1) {
+      setCustomers(response.data);
+    }
+  }
 
   const handleSubmitSale = async (evt) => {
     // evt.preventDefault();
@@ -196,7 +186,7 @@ function FormUpSale(props) {
                 <></>
               )}
               <Social>
-                <IoBuild />
+                <IoCart />
               </Social>
               <NameSubject>
                 <Name style={open ? { display: "none" } : {}}>
@@ -240,7 +230,7 @@ function FormUpSale(props) {
                         })}
                     </Select>
                     <TextInput>
-                      <IoBuild2 />
+                      <IoCart2 />
                     </TextInput>
                   </ContainerInput>
                 </Controller>
@@ -252,8 +242,8 @@ function FormUpSale(props) {
                         setSaleCustomerId(e.target.value);
                       }}
                     >
-                      {employees.length > 0 &&
-                        employees.map((s, key) => {
+                      {customers.length > 0 &&
+                        customers.map((s, key) => {
                           if (s.id == saleCustomerId) {
                             return (
                               <Option key={key} value={s.id} selected>
@@ -269,7 +259,7 @@ function FormUpSale(props) {
                         })}
                     </Select>
                     <TextInput>
-                      <IoBuild2 />
+                      <IoCart2 />
                     </TextInput>
                   </ContainerInput>
                 </Controller>
@@ -300,7 +290,7 @@ function FormUpSale(props) {
                         })}
                     </Select>
                     <TextInput>
-                      <IoBuild2 />
+                      <IoCart2 />
                     </TextInput>
                   </ContainerInput>
                 </Controller>
