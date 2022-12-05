@@ -1,147 +1,147 @@
 import styled from "styled-components";
 import { MdClose } from "react-icons/md";
 import {
-	IoPencilOutline,
-	IoTrashBinOutline,
-	IoColorWandSharp,
+  IoPencilOutline,
+  IoTrashBinOutline,
+  IoColorWandSharp,
 } from "react-icons/io5";
 
 export const IoTrash = styled(IoTrashBinOutline)`
-	width: 20px;
-	height: 20px;
-	cursor: pointer;
-	stroke: black;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  stroke: black;
 
-	&:hover {
-		opacity: 0.5;
-	}
+  &:hover {
+    opacity: 0.5;
+  }
 `;
 
 export const IoColorWand = styled(IoColorWandSharp)`
-	width: 20px;
-	height: 20px;
-	margin-bottom: 5px;
-	cursor: pointer;
-	stroke: white;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  stroke: white;
 
-	&:hover {
-		opacity: 0.5;
-	}
+  &:hover {
+    opacity: 0.5;
+  }
 `;
 export const Icons = styled.div`
-	position: absolute;
-	top: 10px;
-	right: 20px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-	svg {
-		color: black;
-		opacity: 1;
-		margin-top: 10px;
-		transition: all 0.3s ease;
-		cursor: pointer;
-	}
+  svg {
+    color: black;
+    opacity: 1;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
 
-	svg:hover {
-		opacity: 0.6;
-	}
+  svg:hover {
+    opacity: 0.6;
+  }
 
-	@media screen and (min-width: 320px) and (max-width: 1080px) {
-		right: 5px;
-	}
+  @media screen and (min-width: 320px) and (max-width: 1080px) {
+    right: 5px;
+  }
 `;
 
 export const Background = styled.div`
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 44vw;
-	height: 34vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44vw;
+  height: 34vh;
 `;
 
 export const Background2 = styled.div`
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const ModalWrapper2 = styled.div`
-	width: 60vw;
-	height: 50vh;
-	box-shadow: 0 5px 40px rgba(0, 0, 0, 0.6);
-	background: ${({ theme }) => theme.text};
-	color: ${({ theme }) => theme.text};
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	position: absolute;
-	z-index: 999;
-	border-radius: 10px;
-	top: -50px;
-	left: 250px;
+  width: 60vw;
+  height: 50vh;
+  box-shadow: 0 5px 40px rgba(0, 0, 0, 0.6);
+  background: ${({ theme }) => theme.bg};
+  color: ${({ theme }) => theme.text};
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: absolute;
+  z-index: 999;
+  border-radius: 10px;
+  top: 20px;
+  left: 180px;
 `;
 
 export const ModalWrapper = styled.div`
-	width: 40vw;
-	height: 30vh;
-	position: relative;
-	box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
-	/* border: 1px solid black; */
-	background: ${({ theme }) => theme.bg};
-	color: ${({ theme }) => theme.text};
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	/* position: absolute; */
-	z-index: 5;
-	border-radius: 10px;
-	/* top: -50px; */
+  width: 40vw;
+  height: 30vh;
+  position: relative;
+  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
+  /* border: 1px solid black; */
+  background: ${({ theme }) => theme.bg};
+  color: ${({ theme }) => theme.text};
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* position: absolute; */
+  z-index: 5;
+  border-radius: 10px;
+  /* top: -50px; */
 `;
 
 export const ModalImg = styled.img`
-	width: 100%;
-	height: 100%;
-	border-radius: 10px 0 0 10px;
-	background: #000;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+  background: #000;
 `;
 
 export const ModalContent = styled.div`
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	line-height: 1.8;
-	color: ${({ theme }) => theme.text};
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.8;
+  color: ${({ theme }) => theme.text};
 
-	h1 {
-		font-size: 1.5rem;
-		font-weight: bold;
-	}
-	p {
-		margin-bottom: 1rem;
-	}
-	button {
-		padding: 15px 24px;
-		background: ${({ theme }) => theme.buttons};
-		color: black;
-		font-weight: bold;
-		border: none;
-		border-radius: 20px;
-		cursor: pointer;
-		transition: all 0.3s ease;
+  h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  p {
+    margin-bottom: 1rem;
+  }
+  button {
+    padding: 15px 24px;
+    background: ${({ theme }) => theme.buttons};
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 
-		&:hover {
-			background: #333;
-		}
-	}
+    &:hover {
+      background: #333;
+    }
+  }
 `;
 
 export const CloseModalButton = styled(MdClose)`
-	cursor: pointer;
-	position: absolute;
-	top: 65px;
-	right: 20px;
-	width: 32px;
-	height: 32px;
-	padding: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  width: 32px;
+  height: 32px;
+  padding: 0;
 `;

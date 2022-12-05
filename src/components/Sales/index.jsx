@@ -60,7 +60,7 @@ export default function Sales(props) {
   const breakPoints = [
     { width: 500, itemsToShow: 1 },
     { width: 768, itemsToShow: 2 },
-    { width: 1200, itemsToShow: 3 },
+    { width: 1200, itemsToShow: 2 },
   ];
 
   return (
@@ -78,7 +78,7 @@ export default function Sales(props) {
           </BtnContent>
           <Cont>
             <SearchBar
-              placeholder="Procure por funcionários"
+              placeholder="Procure por vendas"
               data={sales}
               updateResult={updateResult}
             />
@@ -95,7 +95,9 @@ export default function Sales(props) {
                   if (result === "") {
                     return value;
                   } else if (
-                    value.name.toLowerCase().includes(result.toLowerCase())
+                    value.product.name
+                      .toLowerCase()
+                      .includes(result.toLowerCase())
                   ) {
                     return value;
                   }
